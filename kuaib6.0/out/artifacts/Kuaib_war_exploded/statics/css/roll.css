@@ -1,0 +1,54 @@
+
+.roll-area{
+    width: 400px;
+    display: inline-block;
+}
+.roll-title{
+    font-family: 文泉驿微米黑;
+    color: #4B63BB;
+    text-align: center;
+}
+.show{
+    color: #4B63BB;
+    font-size: 36px;
+    text-align: center;
+}
+.start{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 60px;
+    background: #4B63BB;
+    border: none;
+    text-align: center;
+    margin-left: 40px;
+}
+.start:hover{
+    color: burlywood;
+    background: green;
+}
+.end{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 60px;
+    background: #4B63BB;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.end:hover{
+    color: burlywood;
+    background: green;
+}
+
+#commit-change:hover{
+    background: green;
+}
+#commit-update:hover{
+    background: green;
+}
+
