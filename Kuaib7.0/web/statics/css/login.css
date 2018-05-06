@@ -1,0 +1,163 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.all{
+    width: 500px;
+    height: 400px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 5px;
+}
+/*body{
+    background: url("/statics/images/bg03.jpg");
+}*/
+#welcome{
+    color: #4B63BB;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+}
+.col-1{
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.col-2{
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.col-1 a{
+    color: #888;
+    list-style: none;
+    text-decoration: none;
+}
+.col-2 a{
+    color: #888;
+    list-style: none;
+    text-decoration: none;
+}
+
+.col-1 a:hover{
+    color: #1CA347;
+}
+.col-2 a:hover{
+    color: #1CA347;
+}
+.form-group input:nth-child(1){
+    display: block;
+    text-align: center;
+    width:400px;
+    height: 45px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #EFFFB4;
+}
+.form-group input:nth-child(2){
+    display: block;
+    text-align: center;
+    width:400px;
+    height: 45px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-top: 10px;
+    background: #EFFFB4;
+}
+.form-group input:hover{
+
+}
+.text-center{
+    display: inline-block;
+}
+#remember{
+    margin-left: 200px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+label{
+    color: black;
+}
+#login-submit{
+    width: 250px;
+    background: #53A3CD;
+    border: white;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+#login-submit:hover{
+    background: #1CA347;
+}
+.forget-pwd {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #53A3CD;
+}
+.forget-pwd:hover{
+    color: #1CA347;
+}
+
+.log{
+    display: block;
+    text-align: center;
+}
+.log input{
+    height: 45px;
+}
+#confirm-pic{
+    display: inline-block;
+    width: 120px;
+    border: none;
+    outline: none;
+    margin-left: 320px;
+    font-weight: bold
+}
+.all{
+    margin-left: 800px;
+}
+.navbar-header{
+    width: 1358px;
+    height: 59px;
+    background-color: #4B63BB;
+    line-height: 59px;
+}
+.logo a{
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    font-family: '微软雅黑', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*
+ logo
+*/
+#logo-png{
+    display: inline-block;
+    /*margin-left: 0px;*/
+}
+
+.bottom{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+.bottom a{
+    text-decoration: none;
+    list-style: none;
+}
