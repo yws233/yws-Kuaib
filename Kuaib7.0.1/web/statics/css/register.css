@@ -1,0 +1,108 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+/*body{
+    background: url("/statics/images/bg03.jpg");
+}*/
+#a-login{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 180px;
+    background:  #53A3CD;
+    outline: none;
+    border: white;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 23px;
+    margin-left: 20px;
+}
+#a-login:hover{
+    background:  #1CA347;
+}
+#doregister{
+    width: 500px;
+    height: 423px;
+    border: white;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
+#text_register{
+    font-size: 25px;
+    color: #666;
+    margin-top: 20px;
+}
+span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+input{
+    display: inline-block;
+    height: 40px;
+    width: 450px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    /*border:1px solid #DEDEDE;*/
+    /*border-radius: 3px;*/
+    font-size: 20px;
+    font-family: Dialog;
+}
+#userCode{
+    margin-top: 10px;
+}
+input:hover{
+    box-shadow: 0px 0px 1px 1px #aec5e6;
+}
+
+.button-register{
+    height: 40px;
+    width: 180px;
+    margin-top: 20px;
+    background:  #53A3CD;
+    outline: none;
+    border: white;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background:  #1CA347;
+}
+
+#logo-z{
+    font-weight: bold;
+    color: white;
+    display:block;
+    text-align: center;
+    font-size: 59px;
+    font-family: '微软雅黑', 'Helvetica Neue', Arial, sans-serif;
+    background: #4B63BB;
+    width: 1352px;
+    height: 59px;
+}
+/*
+#bottom-logo span{
+    list-style: none;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+    line-height: 59px;
+    font-family: Helvetica;
+}
+
+#bottom-logo span:nth-child(1){
+    margin-left: 250px;
+}*/
+

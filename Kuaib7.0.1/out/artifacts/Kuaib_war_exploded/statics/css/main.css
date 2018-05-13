@@ -1,0 +1,721 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+a{
+    color: #337ab7;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+iframe{
+    outline: none;
+    /*border: 1px solid #67727F;*/
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 2px #C1C1C1;
+}
+textarea{
+    outline: none;
+    /*border: 1px solid #67727F;*/
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 2px #C1C1C1;
+}
+.span-head{
+    color: white;
+    /*margin-left: 70px;*/
+    font-size: 16px;
+}
+body{
+    background: #F6F6F6;
+}
+
+/*
+    导航栏
+*/
+.navbar-header{
+    width: 1352px;
+    height: 59px;
+    background-color: #4B63BB;
+    line-height: 59px;
+}
+.logo a{
+    font-size: 36px;
+    color: white;
+}
+.logo button{
+    color: #fff;
+    background-color: #4B63BB;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 10px;
+    border:1px solid #4B63BB;
+    margin-left: 60px;
+}
+.loginout:hover{
+    background-color: #E8F3FE;
+    z-index: 2;
+    color: #4B63BB;
+}
+/*
+    头部导航
+*/
+.btn-head{
+    width: 1330px;
+    height: 20px;
+    position: relative;
+    /* background-color: #4B63BB;*/
+    padding: 10px;
+    border-top: 1px solid #67727F;
+}
+
+.btn-head ul:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.btn-head ul li{
+    float: left;
+    display: inline-block;
+    margin-left: 190px;
+    line-height: 40px;
+    color: #4B63BB;
+    font-family: Dialog;
+    font-weight: bold;
+}
+.btn-head ul li:nth-child(2){
+    margin-left: 370px;
+}
+.btn-head ul li:nth-child(3){
+    margin-left: 370px;
+}
+/*
+    主体内容部分
+*/
+.context{
+    width: 1300px;
+    height: 600px;
+    position: absolute;
+}
+.context div{
+    margin-left: 33px;
+}
+.context:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.left{
+    float: left;
+    background: white;
+    outline: none;
+    float: left;
+    border: 1px solid #A8A7A8;
+    /*border: 1px solid #67727F;*/
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow:  1px 2px 2px #C1C1C1;
+}
+#left{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    border: none; outline: none
+}
+.middle{
+    float: left;
+    width: 420px;
+    height: 500px;
+    background: none;
+}
+.middle span{
+    margin-top: 6px;
+}
+/*
+    中间文本域
+*/
+#status{
+    background-color: white;
+    font-size: 15px;
+    /*resize : none;*/
+    border: none;
+    outline: none;
+    width: 420px;
+    height: 30px;
+    border-top: 1px solid #E8F3FE;
+    box-shadow: none;
+    box-shadow: 1px 1px 1px 1px #aec5e6;
+    font-family: '微软雅黑', 'Helvetica Neue', Arial, sans-serif;
+}
+.right{
+    float: left;
+    width: 380px;
+    height: 500px;
+}
+/*
+    右边文本区域
+*/
+#right{
+    font-size: 18px;
+    background-color: white;
+    border: none; outline: none
+}
+/*
+ 底部控制按钮
+*/
+.btn-ctrl{
+    text-align: center;
+}
+.btn-ctrl button{
+    color: #fff;
+    background-color: #4B63BB;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    border:1px solid #4B63BB;
+}
+.btn-ctrl button:nth-child(5){
+   /* margin-left: 260px;*/
+    margin-left: 164px;
+}
+.btn-ctrl button:nth-child(7){
+    /*margin-right: 120px;*/
+    margin-right: 120px;
+}
+/*
+    清除按钮
+*/
+#clear:hover{
+    color: red;
+}
+label{
+    /*margin-left: 80px;*/
+}
+.btn-ctrl span{
+    color: #fff;
+    background-color: #4B63BB;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    border:1px solid #4B63BB;
+}
+.bottom{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.zw-href1{
+    color: #fff;
+    /*background-color: #A8A7A8;*/
+    display: inline-block;
+    padding: 6px 6px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 50px;
+    outline: 0;
+    margin-top: 15px;
+}
+#zw-href1{
+    color: #fff;
+    /*background-color: #A8A7A8;*/
+    display: inline-block;
+    padding: 6px 6px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 50px;
+    outline: 0;
+    margin-top: 15px;
+}
+#zw-href1:hover{
+    color: burlywood;
+}
+.zw-href1 img{
+    border-radius: 50px;
+}
+.zw-href1:hover{
+    background: #E8F3FE;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 3px 3px #666;    /*添加阴影*/
+    box-shadow: 0 3px 3px #666;
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+
+/*
+ 分享至各个社交软件
+*/
+.logo a:nth-child(-n+7):hover{
+    display: inline-block;
+    z-index: 2;
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+    text-decoration: underline;
+}
+/*.zw-href2{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/github.png") no-repeat 0 10px;
+    background-size: 20px;
+    margin-left: 360px;
+    border-radius: 50%;
+}*/
+/*
+
+.zw-href3{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/wechat.png") no-repeat 0 10px;
+    background-size: 20px;
+    border-radius: 50%;
+}
+.zw-href4{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/qq.png") no-repeat 0 10px;
+    background-size: 20px;
+    border-radius: 50%;
+}
+.zw-href5{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/twitter.png") no-repeat 0 10px;
+    background-size: 20px;
+    border-radius: 50%;
+}
+.zw-href6{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/google.png") no-repeat 0 10px;
+    background-size: 20px;
+    border-radius: 50%;
+}
+.zw-href7{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/statics/images/facebook.png") no-repeat 0 10px;
+    background-size: 20px;
+    border-radius: 50%;
+}
+*/
+
+/*
+    操作按钮hover
+*/
+#btn-1:hover{
+    color: burlywood;
+}
+#btn-2:hover{
+    color: burlywood;
+}
+#btn-3:hover{
+    color: burlywood;
+}
+#btn-4:hover{
+    color: burlywood;
+}
+#zw:hover{
+    color: burlywood;
+}
+#btnHtml:hover{
+    color: burlywood;
+}
+#btnHtml{
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:7px 6px;
+    background: #4B63BB;
+    border: none;
+    outline: none;
+}
+/*
+    分享hover
+*/
+.zw-href2:hover{
+    background-size: 25px;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+.zw-href3:hover{
+    background-size: 25px;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+.zw-href4:hover{
+    background-size: 25px;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+.zw-href5:hover{
+    background-size: 25px;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+.zw-href6:hover{
+    background-size: 25px;
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+}
+.zw-href7:hover{
+    z-index: 2; /*设置在顶层显示*/
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);    /*添加阴影*/
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);     /*向上浮动*/
+    transform: translate3d(0, -2px, 0);
+    background-size: 25px;
+}
+/*
+    文件上传
+*/
+#file-form{
+    display: inline-block;
+}
+#errorinfo{
+    color: red;
+    display: inline-block;
+    overflow: visible;
+}
+/*
+    保存文件按钮
+*/
+.file-save{
+    color: #fff;
+    background-color: #4B63BB;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    border:1px solid #4B63BB;
+}
+.file-save:hover{
+    color: burlywood;
+}
+
+/*
+    查看文件
+*/
+#btn-showfile:hover{
+    color: burlywood;
+}
+
+/*
+ 字数统计控制区域
+*/
+#counter{
+    color: red;
+}
+.count-span{
+    display: inline-block;
+    color: #4B63BB;
+    font-size: 14px;
+    font-family: 文泉驿微米黑;
+    font-weight: bold;
+}
+#write{
+    color: #770088;
+}
+.already{
+    margin-left: 2em;
+    color: #4B63BB;
+    font-size: 14px;
+    font-family: 文泉驿微米黑;
+    font-weight: bold;
+}
+#upload-img{
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    height: 60px;
+    /*margin-top: 20px;*/
+    margin-left: 140px;
+}
+#upload-img:hover{
+    box-shadow:  1px 2px 2px #357ebd;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/*
+    删除文本上传区域内容
+*/
+#clear-upload:hover{
+    color: red;
+}
+/*
+ 查重按钮
+*/
+#circle:hover{
+    color: burlywood;
+}
+/*
+ 中间文本输入控制
+*/
+#right2{
+    border: none;
+    outline: none;
+    margin: 0px;
+    background: white;
+    border-top: 1px solid #E8F3FE;
+    /*resize:none;*/ /*是否去掉拉拽框*/
+}
+/*
+ 双击文本区域可编辑
+*/
+/*.wordclick{
+    width: 400px;
+    height: 300px;
+    background: white;
+    margin: 0px;
+    border: 1px solid red;
+}*/
+
+/*
+ logo字体
+*/
+#logo-1{
+    font-family: '微软雅黑', 'Helvetica Neue', Arial, sans-serif;
+}
+.download-file{
+    color: white
+}
+.download-file:hover{
+    color: burlywood;
+}
+#download-files{
+    color: #fff;
+    /*background-color: #A8A7A8;*/
+    display: inline-block;
+    padding: 7px 7px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    background: #4B63BB;
+}
+#download-files:hover{
+    color: burlywood;
+}
+/*
+    查重按钮
+*/
+#rep-a{
+    color: #fff;
+    /*background-color: #A8A7A8;*/
+    display: inline-block;
+    padding: 7px 10px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    background: #4B63BB;
+}
+#rep-a:hover{
+    color: burlywood;
+}
+
+/*
+    登录用户
+*/
+
+/*#loginuser{
+  text-decoration: underline;
+}*/
+
+/*
+ pdf按钮
+*/
+#pdf{
+    color: #fff;
+    /*background-color: #A8A7A8;*/
+    display: inline-block;
+    padding: 7px 7px;
+    font-family: Dialog;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 15px;
+    background: #4B63BB;
+}
+#pdf:hover{
+    color: burlywood;
+}
+/*
+ 制图图标
+*/
+
+/*
+ 跳转选导师
+*/
+#exhref{
+    color: #fff;
+
+}
+#exhref:hover{
+    color: burlywood;
+}
+
+#zw-geshi{
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+ 文档格式转换
+*/
+
+#exchange-file{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#exchange-file:hover{
+    color: black;
+    border: 1px solid #aec5e6;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 25px;
+
+}
+
+#head-a-hover:hover{
+    color: #aec5e6;
+}
+
+#btn2{
+    border-radius: 3px;
+}
+#btn2:hover{
+    background: #00BB4B;
+
+}
+#btn3{
+    border-radius: 3px;
+}
+#btn3:hover{
+    background: #00BB4B;
+
+}
+#btn4{
+    border-radius: 3px;
+}
+#btn4:hover{
+    background: #00BB4B;
+
+}
+#btn3{
+    color:white;
+    background: #4B63BB;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    float: right;
+    margin-top: 6px;
+}
+#btn3:hover{
+    color: burlywood;
+}
+.savesucss{
+    color: #00BB4B;
+    font-size: 1em;
+    text-align: right;
+}
+.savefail{
+    color: red;
+    font-size: 1em;
+    text-align: right;
+}

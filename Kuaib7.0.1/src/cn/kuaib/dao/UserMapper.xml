@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.kuaib.dao.UserMapper">
+    <select id="getLoginUser" resultType="User">
+        select * from kuaib_user u
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="userCode != null">
+                and u.userCode = #{userCode}
+            </if>
+        </trim>
+    </select>
+    <!-- 注册用户 -->
+    <insert id="addRegister" parameterType="User">
+        insert into kuaib_user (userCode,userPassword,ruserPassword
+        ,email,userName,upics,ufile,picconfirm,wangtext)
+        values (#{userCode},#{userPassword},#{ruserPassword},#{email},#{userName},#{upics},#{ufile},#{picconfirm},#{wangtext})
+    </insert>
+    <!--增加用户-->
+    <insert id="addPic" parameterType="User">
+        insert into kuaib_user (userCode,userPassword,ruserPassword
+        ,email,userName,upics,ufile,picconfirm,wangtext)
+        values (#{userCode},#{userPassword},#{ruserPassword},#{email},#{userName},#{upics},#{ufile},#{picconfirm},#{wangtext})
+    </insert>
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="Integer">
+        delete from kuaib_user WHERE uid = #{uid}
+    </delete>
+    <!--找回密码-->
+    <select id="backPwd" resultType="User">
+        select * from kuaib_user u
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="email != null">
+                and u.email = #{email}
+            </if>
+        </trim>
+    </select>
+    <!--更新用户上传文件信息-->
+    <update id="updateFile" parameterType="User">
+        update kuaib_user
+        <trim prefix="set" suffixOverrides="," suffix="where uid = #{uid}">
+            <if test="userCode != null">userCode=#{userCode},</if>
+            <if test="userName != null">userName=#{userName},</if>
+            <if test="userPassword != null">userPassword=#{userPassword},</if>
+            <if test="email != null">email=#{email},</if>
+            <if test="upics != null">upics=#{upics},</if>
+            <if test="ufile != null">ufile=#{ufile},</if>
+            <if test="picconfirm != null">ufile=#{picconfirm},</if>
+            <if test="wangtext != null">ufile=#{wangtext},</if>
+        </trim>
+    </update>
+    <!--注册用户进行异步验证-->
+    <select id="getRegister" resultType="User">
+        select * from kuaib_user u
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="userCode != null">
+                and u.userCode = #{userCode}
+            </if>
+        </trim>
+    </select>
+    <!--删除文件-->
+    <update id="deletPics" parameterType="Integer">
+        UPDATE kuaib_user SET upics = '' WHERE uid = #{uid}
+    </update>
+
+    <!--导师信息显示部分-->
+    <select id="showEx" resultType="Ex">
+        SELECT * FROM kuaib_exchange
+    </select>
+
+    <!--增加导师信息-->
+     <insert id="addEx" parameterType="Ex">
+        insert into kuaib_exchange (exname,exteacher,exphone) values
+         <trim prefix="(" suffixOverrides="," suffix=")">
+             <if test="exname != null">#{exname},</if>
+             <if test="exteacher != null">#{exteacher},</if>
+             <if test="exphone != null">#{exphone}</if>
+         </trim>
+    </insert>
+    <!--查询总的个数-->
+    <select id="exCount" resultType="Integer">
+        SELECT count(1) FROM kuaib.kuaib_exchange;
+    </select>
+    <!--修改注册用户信息-->
+    <update id="updateEx" parameterType="Ex">
+        UPDATE kuaib_exchange SET exteacher = #{exteacher},exname = #{exname},exphone = #{exphone} WHERE exid = #{exid}
+    </update>
+    <!--查询用户名是否已经存在-->
+    <select id="selectEx" resultType="Ex">
+        SELECT * FROM kuaib_exchange WHERE exname = #{exname}
+    </select>
+    <!--保存文本信息-->
+    <update id="updateText" parameterType="User">
+        update kuaib_user SET wangtext = #{wangtext} WHERE uid = #{uid}
+    </update>
+    <select id="selectLoginUser" resultType="User">
+        SELECT * FROM kuaib_user WHERE uid = #{uid}
+    </select>
+    <!--<trim prefix="set" suffixOverrides="," suffix="where uid = #{uid}">
+        <if test="userCode != null">userCode=#{userCode},</if>
+        <if test="wangtext != null">wangtext=#{wangtext},</if>
+        <if test="userName != null">userName=#{userName},</if>
+        <if test="userPassword != null">userPassword=#{userPassword},</if>
+        <if test="email != null">email=#{email},</if>
+        <if test="upics != null">upics=#{upics},</if>
+        <if test="ufile != null">ufile=#{ufile},</if>
+        <if test="picconfirm != null">ufile=#{picconfirm},</if>
+    </trim>-->
+</mapper>
